@@ -1,4 +1,4 @@
-from mmdet.core import bbox2result
+from frame_work.mmdet.core import bbox2result
 from ..builder import DETECTORS
 from .single_stage import SingleStageDetector
 

@@ -2,7 +2,7 @@ import torch.nn as nn
 from mmcv.cnn import ConvModule, Linear, constant_init, xavier_init
 from mmcv.runner import auto_fp16
 
-from mmdet.models.builder import HEADS
+from frame_work.mmdet.models.builder import HEADS
 from .fcn_mask_head import FCNMaskHead
 
 

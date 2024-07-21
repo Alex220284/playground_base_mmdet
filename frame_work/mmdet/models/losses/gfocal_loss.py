@@ -5,7 +5,7 @@ import torch.nn.functional as F
 from ..builder import LOSSES
 from .utils import weighted_loss
 
-from mmdet.core import bbox_overlaps
+from frame_work.mmdet.core import bbox_overlaps
 
 @mmcv.jit(derivate=True, coderize=True)
 @weighted_loss

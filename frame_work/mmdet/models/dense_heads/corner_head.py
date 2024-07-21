@@ -7,7 +7,7 @@ import torch.nn.functional as F
 from mmcv.cnn import ConvModule, bias_init_with_prob
 from mmcv.ops import CornerPool, batched_nms
 
-from mmdet.core import multi_apply
+from frame_work.mmdet.core import multi_apply
 from ..builder import HEADS, build_loss
 from ..utils import gaussian_radius, gen_gaussian_target
 from .base_dense_head import BaseDenseHead

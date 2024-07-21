@@ -22,8 +22,8 @@ def mask_target(pos_proposals_list, pos_assigned_gt_inds_list, gt_masks_list,
     Example:
         >>> import mmcv
         >>> import mmdet
-        >>> from mmdet.core.mask import BitmapMasks
-        >>> from mmdet.core.mask.mask_target import *
+        >>> from frame_work.mmdet.core.mask import BitmapMasks
+        >>> from frame_work.mmdet.core.mask.mask_target import *
         >>> H, W = 17, 18
         >>> cfg = mmcv.Config({'mask_size': (13, 14)})
         >>> rng = np.random.RandomState(0)
@@ -79,8 +79,8 @@ def mask_target_single(pos_proposals, pos_assigned_gt_inds, gt_masks, cfg):
     Example:
         >>> import mmcv
         >>> import mmdet
-        >>> from mmdet.core.mask import BitmapMasks
-        >>> from mmdet.core.mask.mask_target import *  # NOQA
+        >>> from frame_work.mmdet.core.mask import BitmapMasks
+        >>> from frame_work.mmdet.core.mask.mask_target import *  # NOQA
         >>> H, W = 32, 32
         >>> cfg = mmcv.Config({'mask_size': (7, 11)})
         >>> rng = np.random.RandomState(0)

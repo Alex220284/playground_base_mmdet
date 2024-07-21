@@ -1,6 +1,6 @@
 import torch
 
-from mmdet.core import bbox2result, bbox2roi
+from frame_work.mmdet.core import bbox2result, bbox2roi
 from ..builder import HEADS, build_head, build_roi_extractor
 from .standard_roi_head import StandardRoIHead
 

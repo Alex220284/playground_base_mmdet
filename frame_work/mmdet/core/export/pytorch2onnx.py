@@ -72,7 +72,7 @@ def build_model_from_cfg(config_path, checkpoint_path, cfg_options=None):
     Returns:
         torch.nn.Module: the built model
     """
-    from mmdet.models import build_detector
+    from frame_work.mmdet.models import build_detector
 
     cfg = mmcv.Config.fromfile(config_path)
     if cfg_options is not None:
@@ -106,7 +106,7 @@ def preprocess_example_input(input_config):
             meta information for the example input image.
 
     Examples:
-        >>> from mmdet.core.export import preprocess_example_input
+        >>> from frame_work.mmdet.core.export import preprocess_example_input
         >>> input_config = {
         >>>         'input_shape': (1,3,224,224),
         >>>         'input_path': 'demo/demo.jpg',

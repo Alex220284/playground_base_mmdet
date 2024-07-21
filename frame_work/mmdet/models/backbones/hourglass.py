@@ -97,7 +97,7 @@ class HourglassNet(nn.Module):
         norm_cfg (dict): Dictionary to construct and config norm layer.
 
     Example:
-        >>> from mmdet.models import HourglassNet
+        >>> from frame_work.mmdet.models import HourglassNet
         >>> import torch
         >>> self = HourglassNet()
         >>> self.eval()

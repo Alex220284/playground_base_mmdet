@@ -8,7 +8,7 @@ from mmcv import ConfigDict
 from mmcv.cnn import normal_init
 from mmcv.ops import DeformConv2d, batched_nms
 
-from mmdet.core import (RegionAssigner, build_assigner, build_sampler,
+from frame_work.mmdet.core import (RegionAssigner, build_assigner, build_sampler,
                         images_to_levels, multi_apply)
 from ..builder import HEADS, build_head
 from .base_dense_head import BaseDenseHead

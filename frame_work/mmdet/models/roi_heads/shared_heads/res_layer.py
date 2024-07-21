@@ -2,10 +2,10 @@ import torch.nn as nn
 from mmcv.cnn import constant_init, kaiming_init
 from mmcv.runner import auto_fp16, load_checkpoint
 
-from mmdet.models.backbones import ResNet
-from mmdet.models.builder import SHARED_HEADS
-from mmdet.models.utils import ResLayer as _ResLayer
-from mmdet.utils import get_root_logger
+from frame_work.mmdet.models.backbones import ResNet
+from frame_work.mmdet.models.builder import SHARED_HEADS
+from frame_work.mmdet.models.utils import ResLayer as _ResLayer
+from frame_work.mmdet.utils import get_root_logger
 
 
 @SHARED_HEADS.register_module()

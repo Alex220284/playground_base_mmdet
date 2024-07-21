@@ -4,10 +4,10 @@ import warnings
 from mmcv.cnn import VGG
 from mmcv.runner.hooks import HOOKS, Hook
 
-from mmdet.datasets.builder import PIPELINES
-from mmdet.datasets.pipelines import LoadAnnotations, LoadImageFromFile
-from mmdet.models.dense_heads import GARPNHead, RPNHead
-from mmdet.models.roi_heads.mask_heads import FusedSemanticHead
+from frame_work.mmdet.datasets.builder import PIPELINES
+from frame_work.mmdet.datasets.pipelines import LoadAnnotations, LoadImageFromFile
+from frame_work.mmdet.models.dense_heads import GARPNHead, RPNHead
+from frame_work.mmdet.models.roi_heads.mask_heads import FusedSemanticHead
 
 
 def replace_ImageToTensor(pipelines):

@@ -1,7 +1,7 @@
 import mmcv
 import torch
 
-from mmdet.core import bbox_overlaps
+from frame_work.mmdet.core import bbox_overlaps
 
 
 @mmcv.jit(derivate=True, coderize=True)

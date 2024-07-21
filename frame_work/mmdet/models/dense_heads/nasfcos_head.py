@@ -4,7 +4,7 @@ import torch.nn as nn
 from mmcv.cnn import (ConvModule, Scale, bias_init_with_prob,
                       caffe2_xavier_init, normal_init)
 
-from mmdet.models.dense_heads.fcos_head import FCOSHead
+from frame_work.mmdet.models.dense_heads.fcos_head import FCOSHead
 from ..builder import HEADS
 
 

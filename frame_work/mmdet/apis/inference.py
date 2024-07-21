@@ -7,10 +7,10 @@ from mmcv.ops import RoIPool
 from mmcv.parallel import collate, scatter
 from mmcv.runner import load_checkpoint
 
-from mmdet.core import get_classes
-from mmdet.datasets import replace_ImageToTensor
-from mmdet.datasets.pipelines import Compose
-from mmdet.models import build_detector
+from frame_work.mmdet.core import get_classes
+from frame_work.mmdet.datasets import replace_ImageToTensor
+from frame_work.mmdet.datasets.pipelines import Compose
+from frame_work.mmdet.models import build_detector
 
 
 def init_detector(config, checkpoint=None, device='cuda:0', cfg_options=None):

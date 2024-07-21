@@ -71,7 +71,7 @@ class Darknet(nn.Module):
             and its variants only.
 
     Example:
-        >>> from mmdet.models import Darknet
+        >>> from frame_work.mmdet.models import Darknet
         >>> import torch
         >>> self = Darknet(depth=53)
         >>> self.eval()

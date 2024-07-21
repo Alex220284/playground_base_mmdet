@@ -4,7 +4,7 @@ import mmcv
 import numpy as np
 import pycocotools.mask as maskUtils
 
-from mmdet.core import BitmapMasks, PolygonMasks
+from frame_work.mmdet.core import BitmapMasks, PolygonMasks
 from ..builder import PIPELINES
 
 
@@ -217,9 +217,11 @@ class LoadAnnotations(object):
                  with_label=True,
                  with_mask=False,
                  with_seg=False,
+                 with_angles=False,
                  poly2mask=True,
                  file_client_args=dict(backend='disk')):
         self.with_bbox = with_bbox
+        self.with_angles = with_angles
         self.with_label = with_label
         self.with_mask = with_mask
         self.with_seg = with_seg
@@ -239,7 +241,8 @@ class LoadAnnotations(object):
 
         ann_info = results['ann_info']
         results['gt_bboxes'] = ann_info['bboxes'].copy()
-
+        if self.with_angles:
+            results["angles"] = ann_info["angles"].copy()
         gt_bboxes_ignore = ann_info.get('bboxes_ignore', None)
         if gt_bboxes_ignore is not None:
             results['gt_bboxes_ignore'] = gt_bboxes_ignore.copy()

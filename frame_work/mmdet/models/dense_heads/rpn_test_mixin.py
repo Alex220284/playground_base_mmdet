@@ -1,9 +1,9 @@
 import sys
 
-from mmdet.core import merge_aug_proposals
+from frame_work.mmdet.core import merge_aug_proposals
 
 if sys.version_info >= (3, 7):
-    from mmdet.utils.contextmanagers import completed
+    from frame_work.mmdet.utils.contextmanagers import completed
 
 
 class RPNTestMixin(object):

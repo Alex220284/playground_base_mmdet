@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 
-from mmdet.models.builder import HEADS
+from frame_work.mmdet.models.builder import HEADS
 from ...core import bbox_cxcywh_to_xyxy
 
 

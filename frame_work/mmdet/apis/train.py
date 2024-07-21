@@ -9,11 +9,11 @@ from mmcv.runner import (HOOKS, DistSamplerSeedHook, EpochBasedRunner,
                          build_runner)
 from mmcv.utils import build_from_cfg
 
-from mmdet.core import DistEvalHook, EvalHook
-from mmdet.datasets import (build_dataloader, build_dataset,
+from frame_work.mmdet.core import DistEvalHook, EvalHook
+from frame_work.mmdet.datasets import (build_dataloader, build_dataset,
                             replace_ImageToTensor)
-from mmdet.utils import get_root_logger
-from mmcv_custom.runner import EpochBasedRunnerAmp
+from frame_work.mmdet.utils import get_root_logger
+from frame_work.mmcv_custom.runner import EpochBasedRunnerAmp
 try:
     import apex
 except:

@@ -5,7 +5,7 @@ import torch.nn.functional as F
 from mmcv.cnn import ConvModule, xavier_init
 from mmcv.runner import force_fp32
 
-from mmdet.core import build_sampler, fast_nms, images_to_levels, multi_apply
+from frame_work.mmdet.core import build_sampler, fast_nms, images_to_levels, multi_apply
 from ..builder import HEADS, build_loss
 from .anchor_head import AnchorHead
 

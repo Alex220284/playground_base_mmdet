@@ -9,8 +9,8 @@ from mmcv.cnn import ConvModule
 
 from functools import partial
 
-from mmdet.models.builder import HEADS, build_loss
-from mmdet.utils.common import compute_locations
+from frame_work.mmdet.models.builder import HEADS, build_loss
+from frame_work.mmdet.utils.common import compute_locations
 import torch.nn.functional as F
 
 INF = 100000000

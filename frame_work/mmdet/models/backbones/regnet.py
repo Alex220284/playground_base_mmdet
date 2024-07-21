@@ -42,7 +42,7 @@ class RegNet(ResNet):
             in resblocks to let them behave as identity.
 
     Example:
-        >>> from mmdet.models import RegNet
+        >>> from frame_work.mmdet.models import RegNet
         >>> import torch
         >>> self = RegNet(
                 arch=dict(

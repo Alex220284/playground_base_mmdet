@@ -9,8 +9,8 @@ import torch.nn as nn
 from mmcv.runner import auto_fp16
 from mmcv.utils import print_log
 
-from mmdet.core.visualization import imshow_det_bboxes
-from mmdet.utils import get_root_logger
+from frame_work.mmdet.core.visualization import imshow_det_bboxes
+from frame_work.mmdet.utils import get_root_logger
 
 
 class BaseDetector(nn.Module, metaclass=ABCMeta):

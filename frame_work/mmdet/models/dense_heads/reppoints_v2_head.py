@@ -5,13 +5,13 @@ import torch.nn.functional as F
 from mmcv.cnn import ConvModule, bias_init_with_prob, normal_init
 from mmcv.ops import DeformConv2d, CornerPool
 
-from mmdet.core import (PointGenerator, build_assigner, build_sampler,
+from frame_work.mmdet.core import (PointGenerator, build_assigner, build_sampler,
                         images_to_levels, multi_apply, multiclass_nms_rpd, unmap)
 from ..builder import HEADS, build_loss, build_head
 from .anchor_free_head import AnchorFreeHead
 
-from mmdet.utils.instances import Instances
-from mmdet.utils.common import compute_locations
+from frame_work.mmdet.utils.instances import Instances
+from frame_work.mmdet.utils.common import compute_locations
 from itertools import accumulate
 
 class CornerPoolPack(nn.Module):

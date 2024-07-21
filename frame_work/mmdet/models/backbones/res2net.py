@@ -8,7 +8,7 @@ from mmcv.cnn import (build_conv_layer, build_norm_layer, constant_init,
 from mmcv.runner import load_checkpoint
 from torch.nn.modules.batchnorm import _BatchNorm
 
-from mmdet.utils import get_root_logger
+from frame_work.mmdet.utils import get_root_logger
 from ..builder import BACKBONES
 from .resnet import Bottleneck as _Bottleneck
 from .resnet import ResNet
@@ -279,7 +279,7 @@ class Res2Net(ResNet):
             in resblocks to let them behave as identity.
 
     Example:
-        >>> from mmdet.models import Res2Net
+        >>> from frame_work.mmdet.models import Res2Net
         >>> import torch
         >>> self = Res2Net(depth=50, scales=4, base_width=26)
         >>> self.eval()

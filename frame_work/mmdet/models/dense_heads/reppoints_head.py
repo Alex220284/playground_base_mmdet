@@ -4,7 +4,7 @@ import torch.nn as nn
 from mmcv.cnn import ConvModule, bias_init_with_prob, normal_init
 from mmcv.ops import DeformConv2d
 
-from mmdet.core import (PointGenerator, build_assigner, build_sampler,
+from frame_work.mmdet.core import (PointGenerator, build_assigner, build_sampler,
                         images_to_levels, multi_apply, multiclass_nms, unmap)
 from ..builder import HEADS, build_loss
 from .anchor_free_head import AnchorFreeHead

@@ -2,7 +2,7 @@ from inspect import signature
 
 import torch
 
-from mmdet.core import bbox2result, bbox_mapping_back, multiclass_nms
+from frame_work.mmdet.core import bbox2result, bbox_mapping_back, multiclass_nms
 
 
 class BBoxTestMixin(object):

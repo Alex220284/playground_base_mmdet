@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 
-# from mmdet.core import bbox2result, bbox2roi, build_assigner, build_sampler
+# from frame_work.mmdet.core import bbox2result, bbox2roi, build_assigner, build_sampler
 from ..builder import DETECTORS, build_backbone, build_head, build_neck
 from .base import BaseDetector
 

@@ -5,8 +5,8 @@ import mmcv
 import numpy as np
 from numpy import random
 
-from mmdet.core import PolygonMasks
-from mmdet.core.evaluation.bbox_overlaps import bbox_overlaps
+from frame_work.mmdet.core import PolygonMasks
+from frame_work.mmdet.core.evaluation.bbox_overlaps import bbox_overlaps
 from ..builder import PIPELINES
 
 try:
@@ -412,6 +412,29 @@ class RandomFlip(object):
         else:
             raise ValueError(f"Invalid flipping direction '{direction}'")
         return flipped
+    
+    def angle_flip(self, angles, direction):
+        """Flip box angle horizontally.
+
+        Args:
+            bboxes (numpy.ndarray): Bounding boxes, shape (..., 4*k)
+            img_shape (tuple[int]): Image shape (height, width)
+            direction (str): Flip direction. Options are 'horizontal',
+                'vertical'.
+
+        Returns:
+            numpy.ndarray: Flipped bounding boxes.
+        """
+
+        if direction == 'horizontal':
+            angles = np.pi - angles
+        elif direction == 'vertical':
+            angles = np.pi - angles
+        elif direction == 'diagonal':
+            angles = angles
+        else:
+            raise ValueError(f"Invalid flipping direction '{direction}'")
+        return angles
 
     def __call__(self, results):
         """Call function to flip bounding boxes, masks, semantic segmentation
@@ -458,6 +481,8 @@ class RandomFlip(object):
                 results[key] = self.bbox_flip(results[key],
                                               results['img_shape'],
                                               results['flip_direction'])
+            # flip boxes angles
+            results["angles"] = self.angle_flip(results["angles"], results['flip_direction'])
             # flip masks
             for key in results.get('mask_fields', []):
                 results[key] = results[key].flip(results['flip_direction'])

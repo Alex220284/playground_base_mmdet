@@ -4,9 +4,9 @@ import torch.nn.functional as F
 from mmcv.runner import auto_fp16, force_fp32
 from torch.nn.modules.utils import _pair
 
-from mmdet.core import build_bbox_coder, multi_apply, multiclass_nms
-from mmdet.models.builder import HEADS, build_loss
-from mmdet.models.losses import accuracy
+from frame_work.mmdet.core import build_bbox_coder, multi_apply, multiclass_nms
+from frame_work.mmdet.models.builder import HEADS, build_loss
+from frame_work.mmdet.models.losses import accuracy
 
 
 @HEADS.register_module()
@@ -393,7 +393,7 @@ class BBoxHead(nn.Module):
             >>> # xdoctest: +REQUIRES(module:kwarray)
             >>> import kwarray
             >>> import numpy as np
-            >>> from mmdet.core.bbox.demodata import random_boxes
+            >>> from frame_work.mmdet.core.bbox.demodata import random_boxes
             >>> self = BBoxHead(reg_class_agnostic=True)
             >>> n_roi = 2
             >>> n_img = 4

@@ -3,13 +3,13 @@ import sys
 
 import torch
 
-from mmdet.core import (bbox2roi, bbox_mapping, merge_aug_bboxes,
+from frame_work.mmdet.core import (bbox2roi, bbox_mapping, merge_aug_bboxes,
                         merge_aug_masks, multiclass_nms)
 
 logger = logging.getLogger(__name__)
 
 if sys.version_info >= (3, 7):
-    from mmdet.utils.contextmanagers import completed
+    from frame_work.mmdet.utils.contextmanagers import completed
 
 
 class BBoxTestMixin(object):

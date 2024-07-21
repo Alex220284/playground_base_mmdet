@@ -1,7 +1,7 @@
 import torch
 
-from mmdet.core import bbox2result, bbox2roi, bbox_xyxy_to_cxcywh
-from mmdet.core.bbox.samplers import PseudoSampler
+from frame_work.mmdet.core import bbox2result, bbox2roi, bbox_xyxy_to_cxcywh
+from frame_work.mmdet.core.bbox.samplers import PseudoSampler
 from ..builder import HEADS
 from .cascade_roi_head import CascadeRoIHead
 

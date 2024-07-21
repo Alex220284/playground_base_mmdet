@@ -2,11 +2,11 @@ import numpy as np
 
 import torch
 
-from mmdet.core import bbox2result, bbox_mapping_back, multiclass_nms, merge_aug_masks, bbox_flip
+from frame_work.mmdet.core import bbox2result, bbox_mapping_back, multiclass_nms, merge_aug_masks, bbox_flip
 from ..builder import DETECTORS
 from .single_stage import SingleStageDetector
 import torch.nn.functional as F
-from mmdet.models.roi_heads.mask_heads.condconv_mask_head import aligned_bilinear
+from frame_work.mmdet.models.roi_heads.mask_heads.condconv_mask_head import aligned_bilinear
 import copy
 from PIL import Image 
 @DETECTORS.register_module()

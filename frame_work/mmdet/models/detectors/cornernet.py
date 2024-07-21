@@ -1,6 +1,6 @@
 import torch
 
-from mmdet.core import bbox2result, bbox_mapping_back
+from frame_work.mmdet.core import bbox2result, bbox_mapping_back
 from ..builder import DETECTORS
 from .single_stage import SingleStageDetector
 

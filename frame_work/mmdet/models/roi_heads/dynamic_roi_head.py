@@ -1,8 +1,8 @@
 import numpy as np
 import torch
 
-from mmdet.core import bbox2roi
-from mmdet.models.losses import SmoothL1Loss
+from frame_work.mmdet.core import bbox2roi
+from frame_work.mmdet.models.losses import SmoothL1Loss
 from ..builder import HEADS
 from .standard_roi_head import StandardRoIHead
 

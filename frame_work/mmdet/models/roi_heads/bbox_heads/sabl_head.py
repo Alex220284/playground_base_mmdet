@@ -5,9 +5,9 @@ import torch.nn.functional as F
 from mmcv.cnn import ConvModule, kaiming_init, normal_init, xavier_init
 from mmcv.runner import force_fp32
 
-from mmdet.core import build_bbox_coder, multi_apply, multiclass_nms
-from mmdet.models.builder import HEADS, build_loss
-from mmdet.models.losses import accuracy
+from frame_work.mmdet.core import build_bbox_coder, multi_apply, multiclass_nms
+from frame_work.mmdet.models.builder import HEADS, build_loss
+from frame_work.mmdet.models.losses import accuracy
 
 
 @HEADS.register_module()

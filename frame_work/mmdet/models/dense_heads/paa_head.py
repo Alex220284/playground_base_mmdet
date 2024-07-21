@@ -2,10 +2,10 @@ import numpy as np
 import torch
 from mmcv.runner import force_fp32
 
-from mmdet.core import multi_apply, multiclass_nms
-from mmdet.core.bbox.iou_calculators import bbox_overlaps
-from mmdet.models import HEADS
-from mmdet.models.dense_heads import ATSSHead
+from frame_work.mmdet.core import multi_apply, multiclass_nms
+from frame_work.mmdet.core.bbox.iou_calculators import bbox_overlaps
+from frame_work.mmdet.models import HEADS
+from frame_work.mmdet.models.dense_heads import ATSSHead
 
 EPS = 1e-12
 try:

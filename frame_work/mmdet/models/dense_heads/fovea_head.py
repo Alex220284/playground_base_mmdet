@@ -3,7 +3,7 @@ import torch.nn as nn
 from mmcv.cnn import ConvModule, normal_init
 from mmcv.ops import DeformConv2d
 
-from mmdet.core import multi_apply, multiclass_nms
+from frame_work.mmdet.core import multi_apply, multiclass_nms
 from ..builder import HEADS
 from .anchor_free_head import AnchorFreeHead
 

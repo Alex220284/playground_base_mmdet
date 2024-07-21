@@ -7,8 +7,8 @@ from mmcv.ops.carafe import CARAFEPack
 from mmcv.runner import auto_fp16, force_fp32
 from torch.nn.modules.utils import _pair
 
-from mmdet.core import mask_target
-from mmdet.models.builder import HEADS, build_loss
+from frame_work.mmdet.core import mask_target
+from frame_work.mmdet.models.builder import HEADS, build_loss
 
 BYTES_PER_FLOAT = 4
 # TODO: This memory limit may be too much or too little. It would be better to
@@ -138,7 +138,7 @@ class FCNMaskHead(nn.Module):
     def loss(self, mask_pred, mask_targets, labels):
         """
         Example:
-            >>> from mmdet.models.roi_heads.mask_heads.fcn_mask_head import *  # NOQA
+            >>> from frame_work.mmdet.models.roi_heads.mask_heads.fcn_mask_head import *  # NOQA
             >>> N = 7  # N = number of extracted ROIs
             >>> C, H, W = 11, 32, 32
             >>> # Create example instance of FCN Mask Head.
@@ -193,7 +193,7 @@ class FCNMaskHead(nn.Module):
 
         Example:
             >>> import mmcv
-            >>> from mmdet.models.roi_heads.mask_heads.fcn_mask_head import *  # NOQA
+            >>> from frame_work.mmdet.models.roi_heads.mask_heads.fcn_mask_head import *  # NOQA
             >>> N = 7  # N = number of extracted ROIs
             >>> C, H, W = 11, 32, 32
             >>> # Create example instance of FCN Mask Head.

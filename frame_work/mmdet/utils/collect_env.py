@@ -1,7 +1,7 @@
 from mmcv.utils import collect_env as collect_base_env
 from mmcv.utils import get_git_hash
 
-import mmdet
+from frame_work import mmdet
 
 
 def collect_env():

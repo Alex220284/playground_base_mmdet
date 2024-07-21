@@ -1,7 +1,7 @@
 import torch
 from mmcv.runner import force_fp32
 
-from mmdet.core import (bbox2distance, bbox_overlaps, distance2bbox,
+from frame_work.mmdet.core import (bbox2distance, bbox_overlaps, distance2bbox,
                         multi_apply, reduce_mean)
 from ..builder import HEADS, build_loss
 from .gfl_head import GFLHead

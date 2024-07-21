@@ -1,6 +1,6 @@
 import torch
 
-from mmdet.core import multi_apply
+from frame_work.mmdet.core import multi_apply
 from ..builder import HEADS
 from ..losses import CrossEntropyLoss, SmoothL1Loss, carl_loss, isr_p
 from .ssd_head import SSDHead

@@ -5,8 +5,8 @@ import torch.utils.checkpoint as cp
 from mmcv.cnn import build_conv_layer, build_norm_layer, kaiming_init
 from torch.nn.modules.utils import _pair
 
-from mmdet.models.backbones.resnet import Bottleneck, ResNet
-from mmdet.models.builder import BACKBONES
+from frame_work.mmdet.models.backbones.resnet import Bottleneck, ResNet
+from frame_work.mmdet.models.builder import BACKBONES
 
 
 class TridentConv(nn.Module):
